@@ -1,0 +1,42 @@
+@import url ('https://fonts.googleapis.com/css2? family = Creepster & display = swap');
+
+h1 {color:black;
+    font-size:  70px;
+    font-family:'Mate SC', serif;
+    text-align:center}
+
+a {background-color:rgb(218, 84, 111); 
+    color:whitesmoke; 
+    text-decoration:none; /*quitar el subrayado*/
+    /*padding-top:10px;/* margen superior*/
+    /*padding-right:15px; /*margen derecho*/
+   /* padding-bottom:10px;/*margen de abajo*/
+   /* padding-left:15px;/*margen izquierdo*/
+   /* padding:10px; margen interno para todos los lados*/
+   padding:10px 15px; /*el primer valor es arriba y abajo y el segundo los lados*/
+   border-bottom-left-radius: 15px;
+}
+/*pseudoclase: hover, visited, active*/
+a:hover{
+    background-color:black;
+    color:tomato;
+}
+
+body {max-width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    /*modificar fuentes seguras*/
+    font-size:18px;
+    min-height:100%
+}
+html {height:100%}
+
+img {max-width: 100%;
+    height: auto;}
+
+content {width: 80%;
+max-width:1000px;
+margin:0 auto}
+
+h1 {width:100%}
+main {width:100%}
+section {width:30%} 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{background-image:url(imagenes/fondo.jpg);
+            background-attachment:fixed;
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:cover;
+            padding-top:0%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif}
+footer {margin-left:200px;}
+        
+
+footer a:hover {background-color:red; color:black;}
+
+h2 {font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:40px}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CONTACTO</h1>
+        <nav>
+            <a href="index.html" style="margin-right: 20px; padding: 15px 35px;">Inicio</a>
+            <a href="sobremi.html" style="margin-right: 20px; padding: 15px 35px;">Sobre Prana</a>
+            <a href="productos.html" style="margin-right: 20px; padding: 15px 35px;">Productos</a>
+            <a href="contacto.html" style="margin-right: 20px; padding: 15px 35px;">Contacto</a>
+
+        </nav>
+    </header>
+    <main>
+        <table cellpadding="20" cellspacing="25" style="width:50%; float:right; padding-bottom:10px; padding-top:70px; margin-right:5%;margin-top:40px; margin-bottom:10px; background-color:rgb(119, 201, 180); border-radius:15px">
+            <tr>
+                <th style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px">CONSULTA POR WHATSAPP</th>
+                <th style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:20px">MIRA MI INSTAGRAM</th>
+            </tr>
+            <tr>
+                <td style="font-size:35px">
+                    <a href="https://wa.me/+540232415539421" target="_blank" style="margin-left:40%; width:500px"><span class="icon-phone"></span></a> 
+                </td>
+                <td style="font-size:35px">
+                    <a href="https://www.instagram.com/pranaceramica_/?hl=es-la" target="_blank" style="margin-left:35%"><span class="icon-instagram"></span></a>
+                </td>
+            </tr>
+        </table>
+        <h2>Formulario de contacto</h2>
+        <!--
+            metodos de envio:
+             get: a traves de la url
+             post: ocultos
+        -->
+        <form action="enviar.php" method="post"> 
+            <label for="Nombre">Nombre:</label> <br>
+            <input type="text" id="Nombre" placeholder="Ej. Pedro" size="35" maxlength="15" name="Nombre" required style="width:40%; height: 35px; background-color:whitesmoke;">
+            <br>
+
+            <label for="mail">Correo electrónico:</label> <br>
+            <input type="mail" id="mail" placeholder="Ej.nombre@correo.com" name="mail" required style="width:40%; height: 35px; background-color:whitesmoke">
+            <br>
+
+            
+            <label for="comentarios">Comentarios:</label> <br>
+            <textarea name="comentarios" id="comentarios" cols="50" rows="5" style="width:40%; height: 70px; background-color:whitesmoke"></textarea>
+
+
+            <br><br>
+            <input type="submit" value="Enviar consulta" style="width:40%; height: 35px; background-color:rgb(55, 158, 132); color:black; text-transform:uppercase; font-weight:bold; border-radius: 20px;">
+           <!-- <input type="button" value="enviar">
+            <button>enviar tercer botón</button> -->
+        </form>
+    </main>
+
+    <br> <br>
+
+    <hr style="font-size:35px; background-color:gray">
+
+    <table style="width:100%; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:30px">
+        <tr>
+            <th><span class="icon-location"></span>Ubicación</th>
+        </tr>
+    </table>
+    <br>
+
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6564.353707798106!2d-59.418765156422744!3d-34.650236308163194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc7313caa5e45b%3A0xc86f63a77809bb3a!2sMercedes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1622922849549!5m2!1ses!2sar" width="90%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </footer>
+</body>
+</html>
